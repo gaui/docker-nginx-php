@@ -1,4 +1,4 @@
-FROM nginx:1.12
+FROM nginx:1.13
 
 COPY ./data/default.conf /etc/nginx/conf.d/
 COPY ./data/nginx.conf /etc/nginx/
