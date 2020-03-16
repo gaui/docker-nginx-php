@@ -1,7 +1,7 @@
 FROM nginx:1.13
 
-COPY ./data/default.conf /etc/nginx/conf.d/
-COPY ./data/nginx.conf /etc/nginx/
+COPY ./data/nginx/conf.d/default.conf /etc/nginx/conf.d/
+COPY ./data/nginx/nginx.conf /etc/nginx/
 
 COPY entrypoint.sh /
 RUN chmod a+x /entrypoint.sh
